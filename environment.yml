@@ -1,0 +1,15 @@
+name: deepham
+dependencies:
+  - python=3.8
+  - numpy
+  - scipy
+  - matplotlib
+  - jupyterlab
+  - tqdm
+  - quantecon
+  - pip
+  - pip:
+    - tensorflow==2.5
+    - seaborn
+    - pandas
+    
