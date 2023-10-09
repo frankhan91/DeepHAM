@@ -9,7 +9,7 @@ from value import ValueTrainer
 from policy import KSPolicyTrainer
 from util import print_elapsedtime
 
-flags.DEFINE_string("config_path", "./configs/KS/game_nn_n10.json",
+flags.DEFINE_string("config_path", "./configs/KS/game_nn_n50.json",
                     """The path to load json file.""",
                     short_name='c')
 flags.DEFINE_string("exp_name", "test",
