@@ -18,21 +18,21 @@ Jiequn Han, Yucheng Yang, Weinan E
 ### Quick start for the Krusell-Smith (KS) model under default configs:
 To use DeepHAM to solve the competitive equilibrium of the KS model, run
 ```
-train_KS.py
+python train_KS.py
 ```
 To evaluate the Bellman error of the solution of the KS model, run
 ```
-validate_KS.py
+python validate_KS.py
 ```
 
 Sample scripts for solving the KS model in the Slurm system are provided in the folder ``src/slurm_scripts``
 
 ### Solve the model in Fernandez-Villaverde, Hurtado, and Nuno (2019):
 ```
-train_JFV.py
+python train_JFV.py
 ```
 ```
-validate_JFV.py
+python validate_JFV.py
 ```
 Details on the model setup and algorithm can be found in our paper.
 
