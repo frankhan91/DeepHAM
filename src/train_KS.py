@@ -42,6 +42,7 @@ def main(argv):
     if config["init_with_bchmk"]:
         init_policy = init_ds.k_policy_bchmk
         policy_type = "pde"
+        # TODO: change all "pde" to "conventional"
     else:
         init_policy = init_ds.c_policy_const_share
         policy_type = "nn_share"
