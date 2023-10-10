@@ -87,7 +87,8 @@ class ValueTrainer():
                 for valid_data in valid_dataset:
                     val_loss = self.loss(valid_data)
                     print(
-                        "Epoch: %d, validation loss: %g" % (epoch, val_loss["loss"])
+                        # "Epoch: %d, validation loss: %g" % (epoch, val_loss["loss"])
+                        "Value function learning epoch: %d" % (epoch)
                     )
 
     def save_model(self, path="value_model.h5"):

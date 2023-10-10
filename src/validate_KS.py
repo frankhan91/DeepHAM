@@ -118,8 +118,8 @@ def bellman_err(simul_data, shocks, ptrainer, value_fn, prefix="", nnext=100, nc
         v_tmp = next_value_fn(c_tmp)
         v_next = np.maximum(v_tmp, v_next)
     err_blmopt = v_now - v_next
-    print("Bellman error of %3s: %.6f (expectation), %.6f (optimality)" % \
-        (prefix.upper(), np.abs(err_blmexpct).mean(), np.abs(err_blmopt).mean()))
+    print("Bellman error of %3s: %.6f" % \
+        (prefix.upper(), np.abs(err_blmopt).mean()))
     return err_blmexpct, err_blmopt
 
 
@@ -163,11 +163,11 @@ def main(argv):
         util_sum = np.sum(np.log(simul_data["csmp"])*discount, axis=-1)
         print(
             "%8s: total utilily: %.5f, mean of k: %.5f, std of k: %.5f, max of k: %.5f, max of K: %.5f" % (
-                prefix.upper(), util_sum.mean(), simul_data["k_cross"].mean(), simul_data["k_cross"].std(),
+                prefix, util_sum.mean(), simul_data["k_cross"].mean(), simul_data["k_cross"].std(),
                 simul_data["k_cross"].max(), k_mean.max())
         )
-    path_stats(simul_data_bchmk, "KS")
-    path_stats(simul_data_nn, "NN")
+    path_stats(simul_data_bchmk, "Conventional")
+    path_stats(simul_data_nn, "DeepHAM")
 
     # compute Bellman expectation error
     # value_fn_pde unavailable so far

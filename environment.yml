@@ -9,7 +9,7 @@ dependencies:
   - quantecon
   - pip
   - pip:
-    - tensorflow==2.5
+    - tensorflow==2.13
     - seaborn
     - pandas
     
