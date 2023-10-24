@@ -8,6 +8,8 @@ Jiequn Han, Yucheng Yang, Weinan E
 [![SSRN](https://img.shields.io/badge/SSRN-3990409-133a6f.svg)](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3990409)
 [![PDF](https://img.shields.io/badge/PDF-8A2BE2)](https://yangycpku.github.io/files/DeepHAM_paper.pdf)
 
+Link to code repository: https://github.com/frankhan91/DeepHAM
+
 </div>
 
 
